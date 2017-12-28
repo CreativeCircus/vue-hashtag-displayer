@@ -1,0 +1,89 @@
+/* 
+==============================================
+CONTENT:	Project Name Here
+AUTHOR:		Your Name Here
+==============================================
+
+TABLE OF CONTENTS:
+
+1. Main Layout
+2. Content
+
+==============================================
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import 'reset';
+
+
+/* 1. Main Layout ================================= */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: #ccc;
+	// min-height: 100vh;
+	background: linear-gradient(to bottom right, blue, pink);
+	background-attachment: fixed;
+	color: white;
+	font-family: 'Quicksand', sans-serif;
+}
+
+a.nav {
+	float: left;
+	font-size: 2em;
+	margin: 40px 5%;
+	color: white;
+	border: 1px solid white;
+	text-decoration: none;
+	padding: 20px;
+}
+
+.home {
+	h1 {
+		width: 90%;
+		font-size: 5em;
+		margin: .5em 5%;
+	}
+	p {
+		width: 90%;
+		margin: .5em 5%;
+		font-size: 2em;		
+	}
+}
+
+.tweetfeed {
+
+
+	input {
+		font-size: 4em;
+		width: 90%;
+		margin: 5% 5% 0 5%;
+	}
+	p {
+		width: 90%;
+		font-size: 0.7em;
+		margin: .5em 5%;
+	}
+
+	.tweets {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		li {
+			// flex-grow: 1;
+			overflow: hidden;
+			padding: 20px;
+			width: 200px;
+			font-size: 1em;
+			line-height: 1.5em;
+			&:first-child {
+				font-size: 3em;
+				width: 100%;
+				padding: 50px;
+			}
+		}
+	}
+}
