@@ -13,14 +13,14 @@ var HashtagFormComponent = Vue.component("hashtag-form", {
 	},
 	methods: {
 		hashtagChange: function hashtagChange() {
-			console.log("hashtag has changed", this);
+			// console.log("hashtag has changed", this);
 			if (this.localHashtag.length > 0 && this.localHashtag[0] != "#") {
 				this.localHashtag = "#" + this.localHashtag;
 			}
 			if (this.localHashtag.length > 3 && this.localHashtag != this.$root.hashtag) {
-				this.$root.hashtag = this.localHashtag;
+				this.$emit("hashtag", this.localHashtag);
 			} else {
-				this.$root.hashTag = "";
+				this.$emit("hashtag", "");
 			}
 		}
 	}
