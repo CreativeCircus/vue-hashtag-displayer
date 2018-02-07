@@ -17,10 +17,10 @@ var HashtagFormComponent = Vue.component("hashtag-form", {
 			if (this.localHashtag.length > 0 && this.localHashtag[0] != "#") {
 				this.localHashtag = "#" + this.localHashtag;
 			}
-			if (this.localHashtag.length > 3 && this.localHashtag != app.hashtag) {
-				app.hashtag = this.localHashtag;
+			if (this.localHashtag.length > 3 && this.localHashtag != this.$root.hashtag) {
+				this.$root.hashtag = this.localHashtag;
 			} else {
-				app.hashTag = "";
+				this.$root.hashTag = "";
 			}
 		}
 	}

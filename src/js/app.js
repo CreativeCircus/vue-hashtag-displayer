@@ -3,7 +3,8 @@
 // this uses greg haygood's simple twitter API proxy
 // https://github.com/greghaygood/wd4-ajax-twitter
 // with an added CORS fix.
-const TWITTER_API_BASE = "http://localhost:8888/twitter-proxy.php"; 
+const TWITTER_API_BASE = "http://localhost:8888/wd4-ajax-twitter/twitter-proxy.php"; 
+// const TWITTER_API_BASE = "wd4-ajax-twitter/twitter-proxy.php"; 
 
 const router = new VueRouter({
 	routes: [
